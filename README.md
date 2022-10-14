@@ -7,21 +7,24 @@ for the `master` branch, but it's possible to build other fork.
 
 Tested for the **lilac** open edx release.
 
-## Clean
-Execute it like:
-```bash
-make clean
-```
-
 ## Clone
-Git clone the analyticsapi code to analyticsapi folder.
+Git clone the `edx-analytics-data-api` to `analyticsapi` folder.
+
 ```bash
 make repository=https://github.com/fccn/edx-analytics-data-api.git branch=nau/lilac.master clone
 ```
 
 ## Build
 
-Execute it like:
+Build the docker container with:
+
 ```bash
 make build
+```
+
+## Clean
+Delete cloned code.
+
+```bash
+make clean
 ```
