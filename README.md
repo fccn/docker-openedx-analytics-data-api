@@ -1,6 +1,6 @@
-# Open edX analyticsapi docker builder
+# Open edX analytics api docker builder
 
-Builds a docker container with the Open edX analyticsapi.
+Builds a docker container with the Open edX edx-analytics-data-api.
 
 By default builds the upstream repository https://github.com/openedx/edx-analytics-data-api.git
 for the `master` branch, but it's possible to build other fork.
