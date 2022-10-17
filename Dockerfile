@@ -60,4 +60,4 @@ CMD uwsgi \
     --enable-threads \
     --processes=2 \
     --buffer-size=8192 \
-    --wsgi-file analytics_dashboard/wsgi.py
+    --wsgi-file analyticsdataserver/wsgi.py
