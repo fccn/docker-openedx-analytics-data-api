@@ -14,7 +14,7 @@ clean: ## Clean checkout analyticsapi code
 	rm -rf analyticsapi
 .PHONY: clean
 
-clone: ## Clone code, to custom repo and branch `make repository=https://github.com/fccn/edx-analytics-data-api.git branch=nau/lilac.master clone`
+clone: | clean ## Clone code, to custom repo and branch `make repository=https://github.com/fccn/edx-analytics-data-api.git branch=nau/lilac.master clone`
 	git clone $(repository) --branch $(branch) --depth 1 analyticsapi
 .PHONY: clone
 
