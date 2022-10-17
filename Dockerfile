@@ -50,11 +50,11 @@ COPY ./settings/docker_production.py ./analyticsdataserver/settings/docker_produ
 # Run production server
 ENV DJANGO_SETTINGS_MODULE analyticsdataserver.settings.docker_production
 
-EXPOSE 8000
+EXPOSE 8100
 CMD uwsgi \
     --static-map /static=/openedx/analyticsapi/analyticsdataserver/assets \
     --static-map /media=/openedx/analyticsapi/analyticsdataserver/media \
-    --http 0.0.0.0:8000 \
+    --http 0.0.0.0:8100 \
     --thunder-lock \
     --single-interpreter \
     --enable-threads \
