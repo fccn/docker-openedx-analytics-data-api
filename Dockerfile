@@ -52,8 +52,7 @@ ENV DJANGO_SETTINGS_MODULE analyticsdataserver.settings.docker_production
 
 EXPOSE 8100
 CMD uwsgi \
-    --static-map /static=/openedx/analyticsapi/analyticsdataserver/assets \
-    --static-map /media=/openedx/analyticsapi/analyticsdataserver/media \
+    --static-map /static=/openedx/analyticsapi/assets \
     --http 0.0.0.0:8100 \
     --thunder-lock \
     --single-interpreter \
